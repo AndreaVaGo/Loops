@@ -12,14 +12,14 @@ public class MultiplicationTable {
 
     public List<String> generateTable(int n) {
         if (n < 0) {
-            throw new IllegalArgumentException("mensaje explicando el error");
+            throw new IllegalArgumentException("the number cannot be negative");
         }
-        List<String> listOfLines = new ArrayList<>();
+        List<String> lines = new ArrayList<>();
         for (int i = 1; i <= 10; i++) {
             int result = multiply(n, i);
-            listOfLines.add(n + " x " + i + " = " + result);
+            lines.add(n + " x " + i + " = " + result);
         }
-        return listOfLines;
+        return lines;
     }
 
 }
